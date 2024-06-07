@@ -237,6 +237,11 @@ article > img {
 
 }
 
+.artist__grid > a {
+  color: var(--text-color);
+  text-align: center;
+}
+
 .artist__grid > article {
 
     text-align: center;
