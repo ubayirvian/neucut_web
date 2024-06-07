@@ -57,8 +57,8 @@ img {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 5dvw;
+  margin-right: 5dvw;
 }
 
 .main {
@@ -139,33 +139,24 @@ img {
 /*=============== HOME ===============*/
 .home {
   background-color: var(--second-color);
-  padding: 2rem 0 2rem;
-  height: 100%;
+  min-height: 100dvh;
   display: grid;
 }
 
 .home__container {
   display: grid;
   align-content: center;
-  row-gap: 0rem;
 }
-
-.home__data {
-  text-align: center;
-  margin: 4rem 0 0;
-}
-
-
-
 
 .home__title {
   font-size: var(--biggest-font-size);
+  text-align: center;
+  margin-bottom: 3rem;
 }
 
 .home__booking {
     display: flex;
     justify-content: center;
-    margin: 1rem;
 }
 
 
@@ -189,13 +180,12 @@ img {
 }
 
 .home__img img {
-  width: 200px;
+  width: 240px;
   animation: floaty 1.8s infinite alternate;
 }
 
 .home__img {
   justify-self: center;
-  margin: 2rem 1rem 0;
 }
 
 .home__shadow {
@@ -212,7 +202,7 @@ img {
 
 .hair__artist {
     background-color: var(--first-color);
-    height: 100%;
+    height: 100dvh;
 }
 
 
@@ -224,20 +214,22 @@ article > img {
 
 
 .artist__container {
-    display: grid;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
     background-color: #131b2c;
+    padding-top: 5rem;
 }
 
 .artist__title {
     text-align: center;
-    margin: 2rem;
+    margin: 3rem 0 3rem;
 }
 
 .artist__grid {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    margin: 1rem 0 5rem;
     align-items: center;
     gap: 50px;
 
@@ -259,16 +251,13 @@ article > img {
     display: grid;
 }
 
-.services__title {
-    margin: 4rem 0 0;
-    text-align: center;
+.services__container {
+  padding: 2rem;
 }
-
 .services__image {
     display: flex;
     justify-content: center;
     width: fit-content;
-    margin: 1rem 0 14rem;
 }
 
 
